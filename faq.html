@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Мой Сервис</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header (такой же) -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-600">MyService</a>
+            <div class="space-x-1 md:space-x-6">
+                <a href="index.html" class="px-3 py-2 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition">Главная</a>
+                <a href="faq.html" class="px-3 py-2 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition active-page">FAQ</a>
+                <a href="contacts.html" class="px-3 py-2 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition">Контакты</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="py-16">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl font-bold text-gray-800 mb-4">Часто задаваемые вопросы</h1>
+                <p class="text-xl text-gray-600">Найдите ответы на популярные вопросы о нашем сервисе</p>
+            </div>
+            
+            <!-- Аккордеон на чистом CSS/Tailwind -->
+            <div class="space-y-4">
+                <!-- Вопрос 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition accordion-btn">
+                        <span class="font-semibold text-gray-800 text-lg">Как начать пользоваться сервисом?</span>
+                        <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="px-6 pb-5 accordion-content hidden">
+                        <p class="text-gray-600 leading-relaxed">
+                            Зарегистрируйтесь на сайте, подтвердите email и начните пользоваться бесплатным тарифом. 
+                            Все функции доступны сразу после регистрации. Для доступа к расширенным возможностям 
+                            выберите подходящий тарифный план в личном кабинете.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Вопрос 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition accordion-btn">
+                        <span class="font-semibold text-gray-800 text-lg">Есть ли мобильное приложение?</span>
+                        <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="px-6 pb-5 accordion-content hidden">
+                        <p class="text-gray-600 leading-relaxed">
+                            Да, наше приложение доступно в App Store и Google Play. Все функции синхронизируются 
+                            между веб-версией и мобильным приложением. Скачайте приложение и работайте где угодно, 
+                            даже без доступа к интернету.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Вопрос 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition accordion-btn">
+                        <span class="font-semibold text-gray-800 text-lg">Сколько стоит использование сервиса?</span>
+                        <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="px-6 pb-5 accordion-content hidden">
+                        <p class="text-gray-600 leading-relaxed">
+                            Мы предлагаем бесплатный тариф с базовым функционалом, а также платные тарифы от 499₽/месяц. 
+                            Все тарифы включают техническую поддержку. При годовой оплате — скидка 20%. 
+                            Подробнее с тарифами можно ознакомиться на странице "Цены".
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Вопрос 4 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition accordion-btn">
+                        <span class="font-semibold text-gray-800 text-lg">Как связаться со службой поддержки?</span>
+                        <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="px-6 pb-5 accordion-content hidden">
+                        <p class="text-gray-600 leading-relaxed">
+                            Вы можете связаться с нами через форму обратной связи на странице "Контакты", 
+                            по электронной почте support@myservice.ru или по телефону +7 (999) 123-45-67. 
+                            Время работы поддержки: круглосуточно, без выходных.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Вопрос 5 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition accordion-btn">
+                        <span class="font-semibold text-gray-800 text-lg">Какие способы оплаты вы принимаете?</span>
+                        <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="px-6 pb-5 accordion-content hidden">
+                        <p class="text-gray-600 leading-relaxed">
+                            Мы принимаем банковские карты (Visa, MasterCard, Мир), электронные кошельки (ЮMoney, WebMoney), 
+                            а также оплату через СБП. Для юридических лиц доступен безналичный расчет с выставлением счета.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Вопрос 6 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition accordion-btn">
+                        <span class="font-semibold text-gray-800 text-lg">Как удалить аккаунт?</span>
+                        <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="px-6 pb-5 accordion-content hidden">
+                        <p class="text-gray-600 leading-relaxed">
+                            Вы можете самостоятельно удалить аккаунт в настройках профиля. Все ваши данные будут 
+                            безвозвратно удалены в течение 30 дней. Если вы передумаете, напишите в поддержку — 
+                            мы сможем восстановить аккаунт в течение этого срока.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Дополнительная секция -->
+            <div class="mt-12 text-center">
+                <p class="text-gray-600 mb-4">Не нашли ответ на свой вопрос?</p>
+                <a href="contacts.html" class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg transition">
+                    Связаться с поддержкой
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (такой же) -->
+    <footer class="bg-gray-800 text-white py-12">
+        <!-- ... копируем footer из index.html ... -->
+    </footer>
+
+    <script>
+        // Активная страница
+        document.querySelectorAll('nav a').forEach(link => {
+            if (link.href === window.location.href) {
+                link.classList.add('bg-blue-50', 'text-blue-600');
+                link.classList.remove('text-gray-700');
+            }
+        });
+
+        // Аккордеон
+        const accordionBtns = document.querySelectorAll('.accordion-btn');
+        
+        accordionBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                const arrow = btn.querySelector('svg');
+                
+                // Закрываем все другие открытые аккордеоны
+                accordionBtns.forEach(otherBtn => {
+                    if (otherBtn !== btn) {
+                        const otherContent = otherBtn.nextElementSibling;
+                        const otherArrow = otherBtn.querySelector('svg');
+                        otherContent.classList.add('hidden');
+                        otherArrow.classList.remove('rotate-180');
+                    }
+                });
+                
+                // Открываем/закрываем текущий
+                content.classList.toggle('hidden');
+                arrow.classList.toggle('rotate-180');
+            });
+        });
+        
+        // По умолчанию открываем первый вопрос
+        if (accordionBtns.length > 0) {
+            const firstBtn = accordionBtns[0];
+            const firstContent = firstBtn.nextElementSibling;
+            const firstArrow = firstBtn.querySelector('svg');
+            firstContent.classList.remove('hidden');
+            firstArrow.classList.add('rotate-180');
+        }
+    </script>
+</body>
+</html>
